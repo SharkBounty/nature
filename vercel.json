@@ -1,0 +1,29 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.4"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/promocion",
+      "destination": "/api/promocion.php"
+    },
+    {
+      "source": "/obrigado",
+      "destination": "/api/obrigado.php"
+    },
+    {
+      "source": "/agradecimento",
+      "destination": "/api/agradecimento.php"
+    },
+    {
+      "source": "/oferta",
+      "destination": "/api/oferta.php"
+    },
+    {
+      "source": "/",
+      "destination": "/api/index.php"
+    }
+  ]
+}

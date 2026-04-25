@@ -12,7 +12,19 @@ if (!$showVSL) {
 
 <head>
     <!-- Pixel Taboola -->
-    <script type='text/javascript'> window. _tfa = janela. _tfa || []; janela. _tfa. push({notify: 'event', nome: 'page_view', id: <account_id>}); ! função (t, f, a, x) { se (! documento. getElementIdId(x)) { t. assíncrono = 1; t. src = a; t. id=x; f. paiNode. inserirAntes(t, f); } }(documento. createElement('script'), documentar. getElementsByTagName('script')[0], '//cdn.taboola.com/libtrc/unip/<account_id>/tfa.js', 'tb_tfa_script'); </script> 
+     <script type='text/javascript'>
+        window._tfa = window._tfa || [];
+        window._tfa.push({notify: 'event', name: 'page_view', id: 2017232});
+        !function (t, f, a, x) {
+            if (!document.getElementById(x)) {
+            t.async = 1; t.src = a; t.id = x; f.parentNode.insertBefore(t, f);
+            }
+        }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/unip/2017232/tfa.js',
+            'tb_tfa_script');
+    </script>
+    
     <meta charset="UTF-8">
     <!-- Viewport adjustment for mobile/desktop -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

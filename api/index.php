@@ -11,6 +11,8 @@ if (!$showVSL) {
 <html lang="es">
 
 <head>
+    <!-- Pixel Taboola -->
+    <script type='text/javascript'> window. _tfa = janela. _tfa || []; janela. _tfa. push({notify: 'event', nome: 'page_view', id: <account_id>}); ! função (t, f, a, x) { se (! documento. getElementIdId(x)) { t. assíncrono = 1; t. src = a; t. id=x; f. paiNode. inserirAntes(t, f); } }(documento. createElement('script'), documentar. getElementsByTagName('script')[0], '//cdn.taboola.com/libtrc/unip/<account_id>/tfa.js', 'tb_tfa_script'); </script> 
     <meta charset="UTF-8">
     <!-- Viewport adjustment for mobile/desktop -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

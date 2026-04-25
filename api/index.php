@@ -25,7 +25,7 @@ if (!$showVSL) {
     '//cdn.taboola.com/libtrc/unip/2017232/tfa.js',
     'tb_tfa_script');
     </script>
-    <!-- End of Taboola Pixel Code -->
+    <!-- End of Taboola Pixel Codes -->
 
     <meta charset="UTF-8">
     <!-- Viewport adjustment for mobile/desktop -->

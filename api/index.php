@@ -1,14 +1,20 @@
 <?php
 require_once __DIR__ . '/monitor.php';
-require_once 'reddit_tracker.php';
-$rdt_cid = $_GET['rdt_cid'] ?? null;
-trackRedditPageVisit($rdt_cid);
+
 $showVSL = checkAccess();
 
 if (!$showVSL) {
     include 'recetas.php';
     exit;
 }
+
+// Se passou pelo checkAccess, agora disparamos a CAPI do Reddit manualmente
+$utm_source = $_GET['utm_source'] ?? '';
+if ($utm_source === 'reddit') {
+    $rdt_cid = $_GET['rdt_cid'] ?? null;
+    trackRedditPageVisit($rdt_cid, $event_id);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

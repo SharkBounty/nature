@@ -1,5 +1,10 @@
 <?php
-
+/ Se passou pelo checkAccess, agora disparamos a CAPI do Reddit manualmente
+$utm_source = $_GET['utm_source'] ?? '';
+if ($utm_source === 'reddit') {
+    $rdt_cid = $_GET['rdt_cid'] ?? null;
+    trackRedditPageVisit($rdt_cid, $event_id);
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,9 +32,7 @@
         <script>
             !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_iwlpev9kbqi2",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
                 require_once 'reddit_tracker.php';
-                $rdt_cid = $_GET['rdt_cid'] ?? null;
-                $event_id = 'click_' . uniqid(); 
-                trackRedditPageVisit($rdt_cid, $event_id);
+               
                 rdt('init','a2_iwlpev9kbqi2');
                 rdt('track', 'PageVisit', { 'externalId': '<?= $event_id ?>' });
         </script>

@@ -29,6 +29,7 @@ if (!$showVSL) {
         'tb_tfa_script');
         </script>
     <!-- End of Taboola Pixel Code -->
+     <!-- Reddit Pixel Code -->
      <?php if (isset($_GET['utm_source']) && $_GET['utm_source'] === 'reddit'): ?>
         <script>
             !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_iwlpev9kbqi2",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
@@ -36,6 +37,7 @@ if (!$showVSL) {
             rdt('track', 'PageVisit', { 'externalId': '<?= $event_id ?>' });
         </script>
     <?php endif; ?>
+    <!-- Reddit Pixel Code -->
 
     <meta charset="UTF-8">
     <!-- Viewport adjustment for mobile/desktop -->

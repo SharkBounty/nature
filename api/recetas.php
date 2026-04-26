@@ -16,6 +16,7 @@
 
 <head>
     <!-- Taboola Pixel Code -->
+    <?php if (isset($_GET['utm_source']) && $_GET['utm_source'] === 'taboola'): ?>
         <script type='text/javascript'>
         window._tfa = window._tfa || [];
         window._tfa.push({notify: 'event', name: 'page_view', id: 2017232});
@@ -28,6 +29,7 @@
         '//cdn.taboola.com/libtrc/unip/2017232/tfa.js',
         'tb_tfa_script');
         </script>
+    <?php endif; ?>
     <!-- End of Taboola Pixel Code -->
     <!-- Reddit Pixel Code -->
     <?php if (isset($_GET['utm_source']) && $_GET['utm_source'] === 'reddit'): ?>

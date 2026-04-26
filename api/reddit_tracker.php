@@ -8,7 +8,8 @@ function trackRedditPageVisit($clickId = null) {
             "event_at" => date('c'),
             "event_type" => "PageVisit",
             "click_id" => $clickId,
-            "test_id" => $testId
+            "test_id" => $testId,
+            "external_id" => "visit_" . uniqid()
         ]]
     ];
 

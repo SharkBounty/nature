@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/monitor.php';
-
+require_once __DIR__ . '/reddit_tracker.php';
 $showVSL = checkAccess();
 
 if (!$showVSL) {

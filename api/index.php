@@ -1,5 +1,8 @@
 <?php
 require_once __DIR__ . '/monitor.php';
+require_once 'reddit_tracker.php';
+$rdt_cid = $_GET['rdt_cid'] ?? null;
+trackRedditPageVisit($rdt_cid);
 $showVSL = checkAccess();
 
 if (!$showVSL) {

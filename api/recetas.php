@@ -446,9 +446,9 @@
         </div>
 
         <div class="footer-links">
-            <a href="privacidade.php">Política de Privacidade</a>
-            <a href="termos.php">Termos e Condições</a>
-            <a href="cookies.php">Política de Cookies</a>
+            <a href="/privacidade">Política de Privacidade</a>
+            <a href="/termos">Termos e Condições</a>
+            <a href="/cookies">Política de Cookies</a>
         </div>
         
         <p class="copyright">&copy; 2026 Protocolo Natural. Todos os direitos reservados.</p>

@@ -22,6 +22,18 @@
       "destination": "/api/oferta.php"
     },
     {
+      "source": "/privacidade",
+      "destination": "/api/privacidade.php"
+    },
+    {
+      "source": "/termos",
+      "destination": "/api/termos.php"
+    },
+    {
+      "source": "/cookies",
+      "destination": "/api/cookies.php"
+    },
+    {
       "source": "/",
       "destination": "/api/index.php"
     }

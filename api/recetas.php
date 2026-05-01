@@ -611,14 +611,36 @@
         </section>
 
         <footer>
-            <p>Este produto não substitui o parecer de um médico profissional. Consulta sempre um especialista para
-                tratar assuntos de saúde.</p>
-            <div style="margin: 20px 0;">
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-                <a href="#">Contacto</a>
+            <div style="text-align: left; max-width: 800px; margin: 0 auto; padding: 20px; font-size: 0.75rem; color: #bdc3c7; line-height: 1.5;">
+                <p><strong>INFORMAÇÕES DA EMPRESA:</strong></p>
+                <p>
+                    [NOME DA EMPRESA/TITULAR]<br>
+                    Morada: [Rua, Número, Código Postal, Cidade, País - Ex: Portugal]<br>
+                    NIF/Número de IVA: [Número de Identificação Fiscal Europeu]<br>
+                    Email de contacto: [seu-email-profissional@dominio.com]
+                </p>
+                
+                <p><strong>AVISO LEGAL E SAÚDE:</strong></p>
+                <p>
+                    Este site tem caráter estritamente educativo e informativo. As informações aqui contidas não substituem o aconselhamento, diagnóstico ou tratamento médico profissional. 
+                    Não fazemos promessas de cura. Consulte sempre o seu médico ou profissional de saúde qualificado antes de realizar qualquer alteração na sua dieta ou rotina de cuidados de saúde. 
+                    O utilizador é responsável por verificar a adequação dos conselhos à sua condição de saúde específica.
+                </p>
+
+                <p><strong>PRIVACIDADE E DADOS:</strong></p>
+                <p>
+                    Em conformidade com o RGPD (Regulamento Geral sobre a Proteção de Dados), tratamos os seus dados pessoais com total transparência. 
+                    Ao utilizar este site, concorda com a nossa recolha de dados conforme descrito na nossa Política de Privacidade.
+                </p>
             </div>
-            <p>&copy; 2025 Protocolo Natural. Todos os direitos reservados.</p>
+
+            <div style="margin: 20px 0;">
+                <a href="URL_DA_PRIVACIDADE">Política de Privacidade</a> | 
+                <a href="URL_DOS_TERMOS">Termos e Condições</a> | 
+                <a href="URL_DOS_COOKIES">Política de Cookies</a>
+            </div>
+            
+            <p>&copy; 2026 Protocolo Natural. Todos os direitos reservados.</p>
         </footer>
     </div>
 

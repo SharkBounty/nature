@@ -427,9 +427,9 @@ if ($utm_source === 'reddit') {
                     <strong>Nome Fantasia:</strong> Protocolo Natural<br>
                     <strong>Razão Social:</strong> MATEUS FREIRE ROBERTO - ME<br>
                     <strong>CNPJ:</strong> 61.790.719/0001-68<br>
-                    <strong>Endereço:</strong> Araraquara - SP<br>
-                    <strong>E-mail:</strong> suporte@protocolonatural.com.br<br>
-                    <strong>Telefone:</strong> (16) 99874-5512
+                    <strong>Endereço:</strong> Lisboa - Portugal<br>
+                    <strong>E-mail:</strong> suporte@protocolonatural.pt<br>
+                    <strong>Telefone:</strong> +351 914 582 331
                 </p>
             </div>
 

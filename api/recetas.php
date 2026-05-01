@@ -38,8 +38,9 @@
         </script>
     <?php endif; ?>
     <!-- Reddit Pixel Code -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Guia Mestre do Bicarbonato</title>
+    <title>Rotina de Saúde Natural</title>
 
     <!-- Vercel Analytics -->
     <script>
@@ -47,13 +48,13 @@
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
     <meta name="description"
-        content="Aprende mais de 50 usos incríveis do bicarbonato de sódio para a tua saúde e casa.">
+        content="Aprende hábitos naturais para melhorar a tua saúde e rotina.">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
     <style>
         :root {
-            --primary: #27ae60;
+            --primary: #0066ff;
             --secondary: #2c3e50;
             --accent: #e74c3c;
             --light: #ecf0f1;
@@ -70,11 +71,10 @@
             font-family: 'Open Sans', sans-serif;
             color: #333;
             line-height: 1.6;
+            background-color: #fff;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.2;
         }
@@ -82,8 +82,21 @@
         /* HERO SECTION */
         .hero {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 60px 20px;
+            padding: 40px 20px 60px;
             text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(0, 102, 255, 0.1);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .hero h1 {
@@ -95,97 +108,121 @@
 
         .hero p {
             font-size: 1.1rem;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 30px;
             color: #555;
         }
 
-        .hero-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            margin-bottom: 30px;
-            background: #fff;
-            padding: 10px;
-            min-height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #aaa;
-            border: 2px dashed #ccc;
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            background: #000;
+            overflow: hidden;
+            position: relative;
         }
 
         .btn {
             display: inline-block;
             background-color: var(--primary);
             color: white;
-            padding: 18px 40px;
-            font-size: 1.2rem;
+            padding: 20px 40px;
+            font-size: 1.3rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3);
+            transition: all 0.3s ease;
             text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            max-width: 500px;
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.6);
-            background-color: #219150;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+            background-color: #0052cc;
         }
 
-        /* PROBLEM / SOLUTION */
+        /* FEATURES SECTION */
         .section {
-            padding: 50px 20px;
-            max-width: 900px;
+            padding: 60px 20px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         .section h2 {
             text-align: center;
             color: var(--dark);
-            margin-bottom: 30px;
-            font-size: 1.8rem;
+            margin-bottom: 40px;
+            font-size: 2rem;
         }
 
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
         }
 
         .feature {
             background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
         }
 
         .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+            font-size: 3rem;
+            margin-bottom: 20px;
             display: block;
         }
 
         .feature h3 {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: var(--secondary);
+            font-size: 1.3rem;
         }
 
-        /* OFFER */
+        .feature p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* OFFER SECTION */
+        .offer-section {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+        }
+
         .offer-box {
             background: #fff;
             border: 2px solid var(--primary);
-            border-radius: 15px;
-            padding: 40px;
+            border-radius: 20px;
+            padding: 50px 30px;
             text-align: center;
-            margin-top: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 15px 40px rgba(0, 102, 255, 0.1);
+        }
+
+        .offer-box h3 {
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .offer-box > p {
+            color: #666;
+            margin-bottom: 30px;
         }
 
         .price-tag {
@@ -202,505 +239,232 @@
             margin-right: 10px;
         }
 
+        .benefits-list {
+            text-align: left;
+            max-width: 350px;
+            margin: 0 auto 30px;
+            list-style: none;
+        }
+
+        .benefits-list li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #444;
+            display: flex;
+            align-items: center;
+        }
+        
+        .benefits-list li::before {
+            content: "✅";
+            margin-right: 10px;
+        }
+
         .guarantee {
-            margin-top: 20px;
-            font-size: 0.9rem;
+            margin-top: 25px;
+            font-size: 0.95rem;
             color: #7f8c8d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
 
         /* FOOTER */
         footer {
-            background: var(--dark);
-            color: #bdc3c7;
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.8rem;
-            margin-top: 50px;
-        }
-
-        footer a {
-            color: #ecf0f1;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        /* VSL Specific Styles */
-        #main-content {
-            display: none;
-        }
-
-        #vsl-container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            font-family: 'Open Sans', sans-serif;
-            border: 1px solid #eee;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-            background: #fff;
-        }
-
-        .vsl-header {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
-        }
-
-        .vsl-header h2 {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
-            color: #333;
-            font-weight: 700;
-        }
-
-        .vsl-header p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-
-        .vsl-instruction {
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .cta-continue {
-            display: block;
-            width: 100%;
-            background-color: #0066ff;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        .cta-continue:hover {
-            background-color: #0052cc;
-        }
-
-        .vsl-footer {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background: #1e293b;
+            color: #94a3b8;
+            padding: 50px 20px;
             font-size: 0.85rem;
-            color: #666;
+        }
+        
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
         }
 
-        .disclaimer {
-            font-size: 0.75rem;
-            color: #999;
-            margin-top: 15px;
-            line-height: 1.4;
+        footer h4 {
+            color: #f8fafc;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* QUIZ OVERLAY STYLES */
-        #quiz-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            backdrop-filter: blur(5px);
+        footer p {
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
 
-        .quiz-card {
-            background: #fff;
-            padding: 40px;
-            border-radius: 16px;
-            width: 90%;
-            max-width: 500px;
+        .footer-links {
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            animation: slideUp 0.3s ease-out;
-            position: relative;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
         }
 
-        @keyframes slideUp {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+        .footer-links a {
+            color: #cbd5e1;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.2s;
         }
 
-        .quiz-step {
-            display: none;
+        .footer-links a:hover {
+            color: #fff;
         }
-
-        .quiz-step.active {
-            display: block;
-            animation: fadeIn 0.4s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .quiz-question {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .quiz-options {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .quiz-btn {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
-            padding: 15px;
-            border-radius: 8px;
-            color: #495057;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-weight: 600;
-        }
-
-        .quiz-btn:hover {
-            background: #e9ecef;
-            border-color: #dee2e6;
-            transform: translateX(5px);
-        }
-
-        .quiz-btn:active {
-            background: #dee2e6;
-        }
-
-        .progress-bar {
-            height: 6px;
-            background: #e9ecef;
-            border-radius: 3px;
-            margin-bottom: 30px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: var(--primary);
-            width: 0%;
-            transition: width 0.3s ease;
-        }
-
-        .loading-step {
-            display: none;
-            padding: 20px;
-        }
-
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid var(--primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            color: #64748b;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- QUIZ MODAL -->
-    <div id="quiz-overlay">
-        <div class="quiz-card">
-            <!-- Progress Bar -->
-            <div class="progress-bar">
-                <div class="progress-fill" id="quiz-progress"></div>
+    <!-- HERO SECTION COM VSL -->
+    <header class="hero">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <div class="hero-badge">Apresentação Especial</div>
+            <h1>Descobre o Segredo Para Uma Rotina Com Mais Energia e Disposição</h1>
+            <p>Assiste ao vídeo abaixo com atenção para entenderes o passo a passo de como aplicar este método natural na tua vida diária.</p>
+
+            <!-- VSL Video -->
+            <div class="video-wrapper">
+                <vturb-smartplayer id="vid-69923cd09256726183cee2e3"
+                    style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>
+                <script
+                    type="text/javascript"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/9ed40df3-2499-49b8-b777-b51d01cb3572/players/69923cd09256726183cee2e3/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
+                <script>!function (i, n) { i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now()) }(window, performance);</script>
+                <link rel="preload"
+                    href="https://scripts.converteai.net/9ed40df3-2499-49b8-b777-b51d01cb3572/players/69923cd09256726183cee2e3/v4/player.js"
+                    as="script">
+                <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js"
+                    as="script">
+                <link rel="preload"
+                    href="https://cdn.converteai.net/9ed40df3-2499-49b8-b777-b51d01cb3572/69923c67725525410351094a/main.m3u8"
+                    as="fetch">
+                <link rel="dns-prefetch" href="https://cdn.converteai.net">
+                <link rel="dns-prefetch" href="https://scripts.converteai.net">
+                <link rel="dns-prefetch" href="https://images.converteai.net">
+                <link rel="dns-prefetch" href="https://api.vturb.com.br">
             </div>
 
-            <!-- Question 1 -->
-            <div class="quiz-step active" id="step-1">
-                <h3 class="quiz-question">Como você descreveria sua rotina diária?</h3>
-                <div class="quiz-options">
-                    <button class="quiz-btn" onclick="nextQuestion(2)">Calma e tranquila</button>
-                    <button class="quiz-btn" onclick="nextQuestion(2)">Moderada</button>
-                    <button class="quiz-btn" onclick="nextQuestion(2)">Agitada e estressante</button>
-                </div>
-            </div>
+            <button class="btn go-to-checkout">QUERO ACEDER AGORA</button>
+        </div>
+    </header>
 
-            <!-- Question 2 -->
-            <div class="quiz-step" id="step-2">
-                <h3 class="quiz-question">Você costuma sentir falta de energia ao longo do dia?</h3>
-                <div class="quiz-options">
-                    <button class="quiz-btn" onclick="nextQuestion(3)">Sim, frequentemente</button>
-                    <button class="quiz-btn" onclick="nextQuestion(3)">Às vezes</button>
-                    <button class="quiz-btn" onclick="nextQuestion(3)">Raramente</button>
-                </div>
+    <!-- FEATURES SECTION -->
+    <section class="section">
+        <h2>O Que Vais Descobrir Neste Guia</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <span class="feature-icon">🔋</span>
+                <h3>Mais Energia</h3>
+                <p>Aprende hábitos simples que ajudam a combater a fadiga e trazem mais disposição para o teu dia a dia.</p>
             </div>
-
-            <!-- Question 3 -->
-            <div class="quiz-step" id="step-3">
-                <h3 class="quiz-question">Pretende seguir uma rotina mais natural para sua saúde?</h3>
-                <div class="quiz-options">
-                    <button class="quiz-btn" onclick="finishQuiz()">Sim, com certeza</button>
-                    <button class="quiz-btn" onclick="finishQuiz()">Quero começar hoje</button>
-                </div>
+            <div class="feature">
+                <span class="feature-icon">🌿</span>
+                <h3>Método 100% Natural</h3>
+                <p>Descobre como utilizar ingredientes naturais que já tens em casa para melhorar o teu bem-estar.</p>
             </div>
-
-            <!-- Loading -->
-            <div class="loading-step" id="step-loading">
-                <div class="spinner"></div>
-                <h3 style="color: #666; font-size: 1.2rem;">Processando suas respostas...</h3>
-                <p style="color: #999; font-size: 0.9rem; margin-top: 10px;">Aguarde um momento.</p>
+            <div class="feature">
+                <span class="feature-icon">🛡️</span>
+                <h3>Mais Qualidade de Vida</h3>
+                <p>Uma rotina prática e testada para fortalecer o teu corpo e trazer mais equilíbrio sem depender de produtos químicos.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- VSL GATE CONTAINER -->
-    <div id="vsl-container">
-        <div class="vsl-header">
-            <h2>Rotina Masculina</h2>
-            <p>Conteúdo informativo e educativo.</p>
+    <!-- OFFER SECTION -->
+    <section class="offer-section" id="comprar">
+        <div class="offer-box">
+            <h3>Acesso Imediato ao Guia</h3>
+            <p>Tem acesso completo ao material digital em PDF imediatamente após a confirmação.</p>
+
+            <div class="price-tag">
+                <span class="old-price">29.99€</span>
+                9,90€
+            </div>
+
+            <ul class="benefits-list">
+                <li>Acesso Imediato (Download)</li>
+                <li>Passo a Passo Completo</li>
+                <li>Receitas e Hábitos Práticos</li>
+                <li>Garantia de 7 Dias</li>
+            </ul>
+
+            <button class="btn go-to-checkout">ACEDER AO GUIA COMPLETO</button>
+
+            <div class="guarantee">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Pagamento 100% Seguro e Encriptado</span>
+            </div>
         </div>
+    </section>
 
-        <p class="vsl-instruction">Vê o vídeo antes de continuar</p>
-
-        <!-- VSL Script Provided by User -->
-        <div class="video-wrapper" style="margin-bottom: 20px;">
-            <vturb-smartplayer id="vid-69923cd09256726183cee2e3"
-                style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer>
-            <script
-                type="text/javascript"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/9ed40df3-2499-49b8-b777-b51d01cb3572/players/69923cd09256726183cee2e3/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
-            <script>!function (i, n) { i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now()) }(window, performance);</script>
-            <link rel="preload"
-                href="https://scripts.converteai.net/9ed40df3-2499-49b8-b777-b51d01cb3572/players/69923cd09256726183cee2e3/v4/player.js"
-                as="script">
-            <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js"
-                as="script">
-            <link rel="preload"
-                href="https://cdn.converteai.net/9ed40df3-2499-49b8-b777-b51d01cb3572/69923c67725525410351094a/main.m3u8"
-                as="fetch">
-            <link rel="dns-prefetch" href="https://cdn.converteai.net">
-            <link rel="dns-prefetch" href="https://scripts.converteai.net">
-            <link rel="dns-prefetch" href="https://images.converteai.net">
-            <link rel="dns-prefetch" href="https://api.vturb.com.br">
-        </div>
-
-        <button class="cta-continue" onclick="showQuiz()">CONTINUAR</button>
-
-        <div class="vsl-footer">
-            <span>Vídeo</span>
+   <!-- FOOTER -->
+   <footer>
+        <div class="footer-content">
             <div>
-                <button
-                    style="background: #eee; border: none; padding: 5px 10px; border-radius: 3px; margin-right: 5px; cursor: not-allowed; color: #999;">Voltar</button>
-                <button class="cta-continue"
-                    style="display: inline-block; width: auto; margin: 0; padding: 5px 15px; font-size: 0.9rem;"
-                    onclick="showQuiz()">Continuar</button>
-            </div>
-        </div>
-
-        <p class="disclaimer">
-            Conteúdo informativo e educativo.<br>
-            Não substitui a orientação profissional. Não realiza promessas de cura nem tratamento.
-        </p>
-    </div>
-
-    <!-- MAIN CONTENT (HIDDEN INITIALLY - KEPT FOR REFERENCE OR FALLBACK) -->
-    <div id="main-content">
-        <header class="hero">
-            <div class="container" style="max-width: 800px; margin: 0 auto;">
-                <h1>Pare de Gastar em Químicos Perigosos!</h1>
-                <p>Descobre os 50 usos esquecidos do Bicarbonato de Sódio que te pouparão centenas de euros por ano
-                    enquanto proteges a saúde da tua família.</p>
-
-                <!-- Hero Image / Product Mockup -->
-                <div class="hero-img">
-                    <img src="https://placehold.co/600x350/png?text=Guia+Mestre+Bicarbonato" alt="Guia Digital"
-                        style="max-width:100%; height:auto;">
-                </div>
-
-                <a href="#comprar" class="btn">Quero o Guia Agora!</a>
-            </div>
-        </header>
-
-        <!-- CONTENT -->
-        <section class="section">
-            <h2>Sabias que tens a solução para a maioria dos teus problemas na tua cozinha?</h2>
-            <p style="margin-bottom: 20px;">Fizeram-nos acreditar que precisamos de um produto diferente para cada
-                thing:
-                um para os vidros, outro para a cozinha, outro para a roupa, cremes caros para a pele...</p>
-            <p><strong>É mentira!</strong></p>
-            <p>Os nossos avós sabiam-no: com ingredientes simples e naturais pode-se fazer quase tudo. E o rei de todos
-                eles é o Bicarbonato de Sódio.</p>
-        </section>
-
-        <section class="section" style="background-color: #f9f9f9;">
-            <h2>O Que Aprenderás Neste Guia Exclusivo</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <span class="feature-icon">🌿</span>
-                    <h3>Saúde Natural</h3>
-                    <p>Remédios caseiros para a azia, picadas, branqueamento dentário seguro e mais.</p>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">✨</span>
-                    <h3>Limpeza Profunda</h3>
-                    <p>Como eliminar manchas impossíveis, gordura e maus cheiros sem usar tóxicos.</p>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">💰</span>
-                    <h3>Poupança Massiva</h3>
-                    <p>Aprende a fabricar os teus próprios produtos por cêntimos.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- OFFER SECTION -->
-        <section class="section" id="comprar">
-            <div class="offer-box">
-                <h3>Oferta Especial de Lançamento</h3>
-                <p>Obtém o manual completo "Os Milagres do Bicarbonato" em formato digital (PDF).</p>
-
-                <div class="price-tag">
-                    <span class="old-price">29.99€</span>
-                    9,90€
-                </div>
-
-                <ul style="text-align: left; max-width: 300px; margin: 0 auto 30px; list-style: none;">
-                    <li style="margin-bottom: 10px;">✅ Acesso Imediato (Download)</li>
-                    <li style="margin-bottom: 10px;">✅ 50+ Receitas Testadas</li>
-                    <li style="margin-bottom: 10px;">✅ Garantia de 7 Dias</li>
-                </ul>
-
-                <a href="https://pay.hotmart.com/V103374224C?off=dafn4nqn" class="btn">DESCARREGAR GUIA COMPLETA</a>
-
-                <div class="guarantee">
-                    <p>🔒 Pagamento 100% Seguro e Encriptado</p>
-                </div>
-            </div>
-        </section>
-
-       <footer>
-            <div style="text-align: left; max-width: 800px; margin: 0 auto; padding: 20px; font-size: 0.75rem; color: #bdc3c7; line-height: 1.5;">
-                <p><strong>INFORMAÇÕES DA EMPRESA:</strong></p>
+                <h4>Informações da Empresa</h4>
                 <p>
-                    [NOME DA EMPRESA/TITULAR]<br>
-                    Morada: [Rua, Número, Código Postal, Cidade, País - Ex: Portugal]<br>
-                    NIF/Número de IVA: [Número de Identificação Fiscal Europeu]<br>
-                    Email de contacto: [seu-email-profissional@dominio.com]
+                    <strong>Nome da Empresa / Titular:</strong> [SUA EMPRESA / SEU NOME]<br>
+                    <strong>NIF:</strong> [000000000]<br>
+                    <strong>Morada:</strong> [Rua Exemplo, 123, Código Postal, Localidade - Portugal]<br>
+                    <strong>Email:</strong> [contacto@teudominio.pt]<br>
+                    <strong>Telefone:</strong> [+351 900 000 000]
                 </p>
-                
-                <p><strong>AVISO LEGAL E SAÚDE:</strong></p>
-                <p>
-                    Este site tem caráter estritamente educativo e informativo. As informações aqui contidas não substituem o aconselhamento, diagnóstico ou tratamento médico profissional. 
-                    Não fazemos promessas de cura. Consulte sempre o seu médico ou profissional de saúde qualificado antes de realizar qualquer alteração na sua dieta ou rotina de cuidados de saúde. 
-                    O utilizador é responsável por verificar a adequação dos conselhos à sua condição de saúde específica.
-                </p>
-
-                <p><strong>PRIVACIDADE E DADOS:</strong></p>
-                <p>
-                    Em conformidade com o RGPD (Regulamento Geral sobre a Proteção de Dados), tratamos os seus dados pessoais com total transparência. 
-                    Ao utilizar este site, concorda com a nossa recolha de dados conforme descrito na nossa Política de Privacidade.
-                </p>
-            </div>
-
-            <div style="margin: 20px 0;">
-                <a href="URL_DA_PRIVACIDADE">Política de Privacidade</a> | 
-                <a href="URL_DOS_TERMOS">Termos e Condições</a> | 
-                <a href="URL_DOS_COOKIES">Política de Cookies</a>
             </div>
             
-            <p>&copy; 2026 Protocolo Natural. Todos os direitos reservados.</p>
-        </footer>
-    </div>
+            <div>
+                <h4>Aviso Legal e Saúde</h4>
+                <p>
+                    Este produto não é um medicamento e não substitui o aconselhamento, diagnóstico ou tratamento médico profissional. 
+                    As informações contidas neste site têm caráter estritamente educativo e informativo.
+                </p>
+                <p>
+                    Consulta sempre o teu médico ou profissional de saúde qualificado antes de realizares qualquer alteração na tua dieta ou rotina de saúde. Os resultados podem variar de pessoa para pessoa.
+                </p>
+            </div>
+
+            <div>
+                <h4>Privacidade e Dados</h4>
+                <p>
+                    Em conformidade com o RGPD (Regulamento Geral sobre a Proteção de Dados), tratamos os teus dados pessoais com total transparência. 
+                    Ao utilizar este site, concordas com a nossa recolha de dados conforme descrito na nossa Política de Privacidade.
+                </p>
+                <p>
+                    Este site não é afiliado ao Taboola, Facebook, Google ou qualquer das suas entidades.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="privacidade.php">Política de Privacidade</a>
+            <a href="termos.php">Termos e Condições</a>
+            <a href="cookies.php">Política de Cookies</a>
+        </div>
+        
+        <p class="copyright">&copy; 2026 Protocolo Natural. Todos os direitos reservados.</p>
+    </footer>
 
     <script>
-        // Updated Mundpay checkout URL
+        // Setup checkout URL
         const BASE_URL = "https://pay.mundpay.com/0199fdf7-9701-719e-9e32-3e4c59bbe74d";
         const MUNDPAY_URL = BASE_URL + window.location.search;
 
-        function showQuiz() {
-            document.getElementById('quiz-overlay').style.display = 'flex';
-            updateProgress(1);
-        }
-
-        function nextQuestion(step) {
-            // Hide all steps
-            document.querySelectorAll('.quiz-step').forEach(el => {
-                el.classList.remove('active');
-                el.style.display = 'none'; // Force hide to prevent flash
-            });
-
-            // Show new step
-            const nextStep = document.getElementById('step-' + step);
-            if (nextStep) {
-                nextStep.style.display = 'block';
-                // Trigger reflow for animation
-                void nextStep.offsetWidth;
-                nextStep.classList.add('active');
-                updateProgress(step);
-            }
-        }
-
-        function updateProgress(step) {
-            const totalSteps = 3;
-            const percentage = (step / totalSteps) * 100;
-            document.getElementById('quiz-progress').style.width = percentage + '%';
-        }
-
-        function finishQuiz() {
-            // Hide questions
-            document.querySelectorAll('.quiz-step').forEach(el => {
-                el.classList.remove('active');
-                el.style.display = 'none';
-            });
-
-            // Show loading
-            const loading = document.getElementById('step-loading');
-            loading.style.display = 'block';
-
-            // Wait 2 seconds then redirect
-            setTimeout(() => {
+        // Add event listeners to all checkout buttons
+        document.querySelectorAll('.go-to-checkout').forEach(button => {
+            button.addEventListener('click', () => {
                 window.location.href = MUNDPAY_URL;
-            }, 2500);
-        }
-
-        function showContent() {
-            // Legacy function kept for fallback, though new flow uses showQuiz()
-            document.getElementById('vsl-container').style.display = 'none';
-            document.getElementById('main-content').style.display = 'block';
-            window.scrollTo(0, 0);
-        }
+            });
+        });
     </script>
 </body>
 

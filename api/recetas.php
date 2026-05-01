@@ -610,7 +610,7 @@
             </div>
         </section>
 
-        <footer>
+       <footer>
             <div style="text-align: left; max-width: 800px; margin: 0 auto; padding: 20px; font-size: 0.75rem; color: #bdc3c7; line-height: 1.5;">
                 <p><strong>INFORMAÇÕES DA EMPRESA:</strong></p>
                 <p>

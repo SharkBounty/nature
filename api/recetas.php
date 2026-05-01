@@ -31,7 +31,7 @@ if ($utm_source === 'reddit') {
     <?php if (isset($_GET['utm_source']) && $_GET['utm_source'] === 'reddit'): ?>
         <script>
             !function (w, d) { if (!w.rdt) { var p = w.rdt = function () { p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments) }; p.callQueue = []; var t = d.createElement("script"); t.src = "https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_iwlpev9kbqi2", t.async = !0; var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(t, s) } }(window, document);
-                        require_once 'reddit_tracker.php';
+                require_once 'reddit_tracker.php';
 
             rdt('init', 'a2_iwlpev9kbqi2');
             rdt('track', 'PageVisit', { 'externalId': '<?= $event_id ?>' });
@@ -40,14 +40,15 @@ if ($utm_source === 'reddit') {
     <!-- Reddit Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotina de Saúde Natural</title>
+    <title>O Segredo da Potência Masculina</title>
 
     <!-- Vercel Analytics -->
     <script>
         window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
-    <meta name="description" content="Aprende hábitos naturais para melhorar a tua saúde e rotina.">
+    <meta name="description"
+        content="Descobre as receitas naturais que estão a revolucionar o desempenho e a vitalidade masculina.">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
@@ -332,9 +333,9 @@ if ($utm_source === 'reddit') {
     <header class="hero">
         <div class="container" style="max-width: 1000px; margin: 0 auto;">
             <div class="hero-badge">Apresentação Especial</div>
-            <h1>Descobre o Segredo Para Uma Rotina Com Mais Energia e Disposição</h1>
-            <p>Assiste ao vídeo abaixo com atenção para entenderes o passo a passo de como aplicar este método natural
-                na tua vida diária.</p>
+            <h1>Descobre as Receitas Naturais Para Recuperar a Tua Potência e Vitalidade Masculina</h1>
+            <p>Assiste ao vídeo abaixo com atenção para entenderes o passo a passo de como homens comuns estão a usar
+                misturas caseiras para maximizar o seu desempenho e energia diária.</p>
 
             <!-- VSL Video -->
             <div class="video-wrapper">
@@ -363,24 +364,25 @@ if ($utm_source === 'reddit') {
 
     <!-- FEATURES SECTION -->
     <section class="section">
-        <h2>O Que Vais Descobrir Neste Guia</h2>
+        <h2>O Que Vais Descobrir Neste Guia de Receitas</h2>
         <div class="feature-grid">
             <div class="feature">
-                <span class="feature-icon">🔋</span>
-                <h3>Mais Energia</h3>
-                <p>Aprende hábitos simples que ajudam a combater a fadiga e trazem mais disposição para o teu dia a dia.
-                </p>
+                <span class="feature-icon">🔥</span>
+                <h3>Desempenho Máximo</h3>
+                <p>Aprende a preparar misturas simples que aumentam naturalmente o teu vigor, combatem o cansaço e
+                    devolvem a confiança masculina.</p>
             </div>
             <div class="feature">
                 <span class="feature-icon">🌿</span>
-                <h3>Método 100% Natural</h3>
-                <p>Descobre como utilizar ingredientes naturais que já tens em casa para melhorar o teu bem-estar.</p>
+                <h3>Ingredientes Caseiros</h3>
+                <p>Descobre como combinar especiarias, frutas e raízes que já tens na tua cozinha para criar poderosos
+                    estimulantes naturais.</p>
             </div>
             <div class="feature">
                 <span class="feature-icon">🛡️</span>
-                <h3>Mais Qualidade de Vida</h3>
-                <p>Uma rotina prática e testada para fortalecer o teu corpo e trazer mais equilíbrio sem depender de
-                    produtos químicos.</p>
+                <h3>Resultados Sem Químicos</h3>
+                <p>Uma rotina testada e segura para fortalecer o corpo masculino e recuperar a vitalidade da juventude
+                    sem depender de comprimidos ou químicos perigosos.</p>
             </div>
         </div>
     </section>
@@ -397,10 +399,10 @@ if ($utm_source === 'reddit') {
             </div>
 
             <ul class="benefits-list">
-                <li>Acesso Imediato (Download)</li>
-                <li>Passo a Passo Completo</li>
-                <li>Receitas e Hábitos Práticos</li>
-                <li>Garantia de 7 Dias</li>
+                <li>Acesso Imediato (Download PDF)</li>
+                <li>Guia Passo a Passo das Receitas</li>
+                <li>Técnicas de Preparo Rápido</li>
+                <li>Garantia Incondicional de 7 Dias</li>
             </ul>
 
             <button class="btn go-to-checkout">ACEDER AO GUIA COMPLETO</button>
@@ -422,11 +424,12 @@ if ($utm_source === 'reddit') {
             <div>
                 <h4>Informações da Empresa</h4>
                 <p>
-                    <strong>Nome da Empresa / Titular:</strong> [SUA EMPRESA / SEU NOME]<br>
-                    <strong>NIF:</strong> [000000000]<br>
-                    <strong>Morada:</strong> [Rua Exemplo, 123, Código Postal, Localidade - Portugal]<br>
-                    <strong>Email:</strong> [contacto@teudominio.pt]<br>
-                    <strong>Telefone:</strong> [+351 900 000 000]
+                    <strong>Nome Fantasia:</strong> Protocolo Natural<br>
+                    <strong>Razão Social:</strong> MATEUS FREIRE ROBERTO - ME<br>
+                    <strong>CNPJ:</strong> 61.790.719/0001-68<br>
+                    <strong>Endereço:</strong> Araraquara - SP<br>
+                    <strong>E-mail:</strong> suporte@protocolonatural.com.br<br>
+                    <strong>Telefone:</strong> (16) 99874-5512
                 </p>
             </div>
 

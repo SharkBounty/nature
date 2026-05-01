@@ -1,10 +1,10 @@
 <?php
-    // Se passou pelo checkAccess, agora disparamos a CAPI do Reddit manualmente
-    $utm_source = $_GET['utm_source'] ?? '';
-    if ($utm_source === 'reddit') {
-        $rdt_cid = $_GET['rdt_cid'] ?? null;
-        trackRedditPageVisit($rdt_cid, $event_id);
-    }
+// Se passou pelo checkAccess, agora disparamos a CAPI do Reddit manualmente
+$utm_source = $_GET['utm_source'] ?? '';
+if ($utm_source === 'reddit') {
+    $rdt_cid = $_GET['rdt_cid'] ?? null;
+    trackRedditPageVisit($rdt_cid, $event_id);
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,27 +14,27 @@
     <!-- Taboola Pixel Code -->
     <?php if (isset($_GET['utm_source']) && $_GET['utm_source'] === 'taboola'): ?>
         <script type='text/javascript'>
-        window._tfa = window._tfa || [];
-        window._tfa.push({notify: 'event', name: 'page_view', id: 2017232});
-        !function (t, f, a, x) {
+            window._tfa = window._tfa || [];
+            window._tfa.push({ notify: 'event', name: 'page_view', id: 2017232 });
+            !function (t, f, a, x) {
                 if (!document.getElementById(x)) {
-                    t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+                    t.async = 1; t.src = a; t.id = x; f.parentNode.insertBefore(t, f);
                 }
-        }(document.createElement('script'),
-        document.getElementsByTagName('script')[0],
-        '//cdn.taboola.com/libtrc/unip/2017232/tfa.js',
-        'tb_tfa_script');
+            }(document.createElement('script'),
+                document.getElementsByTagName('script')[0],
+                '//cdn.taboola.com/libtrc/unip/2017232/tfa.js',
+                'tb_tfa_script');
         </script>
     <?php endif; ?>
     <!-- End of Taboola Pixel Code -->
     <!-- Reddit Pixel Code -->
     <?php if (isset($_GET['utm_source']) && $_GET['utm_source'] === 'reddit'): ?>
         <script>
-            !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_iwlpev9kbqi2",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
-                require_once 'reddit_tracker.php';
-               
-                rdt('init','a2_iwlpev9kbqi2');
-                rdt('track', 'PageVisit', { 'externalId': '<?= $event_id ?>' });
+            !function (w, d) { if (!w.rdt) { var p = w.rdt = function () { p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments) }; p.callQueue = []; var t = d.createElement("script"); t.src = "https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_iwlpev9kbqi2", t.async = !0; var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(t, s) } }(window, document);
+                        require_once 'reddit_tracker.php';
+
+            rdt('init', 'a2_iwlpev9kbqi2');
+            rdt('track', 'PageVisit', { 'externalId': '<?= $event_id ?>' });
         </script>
     <?php endif; ?>
     <!-- Reddit Pixel Code -->
@@ -47,8 +47,7 @@
         window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
-    <meta name="description"
-        content="Aprende hábitos naturais para melhorar a tua saúde e rotina.">
+    <meta name="description" content="Aprende hábitos naturais para melhorar a tua saúde e rotina.">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
@@ -74,7 +73,9 @@
             background-color: #fff;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.2;
         }
@@ -220,7 +221,7 @@
             margin-bottom: 15px;
         }
 
-        .offer-box > p {
+        .offer-box>p {
             color: #666;
             margin-bottom: 30px;
         }
@@ -253,7 +254,7 @@
             display: flex;
             align-items: center;
         }
-        
+
         .benefits-list li::before {
             content: "✅";
             margin-right: 10px;
@@ -276,7 +277,7 @@
             padding: 50px 20px;
             font-size: 0.85rem;
         }
-        
+
         .footer-content {
             max-width: 1000px;
             margin: 0 auto;
@@ -316,7 +317,7 @@
         .footer-links a:hover {
             color: #fff;
         }
-        
+
         .copyright {
             text-align: center;
             margin-top: 20px;
@@ -332,7 +333,8 @@
         <div class="container" style="max-width: 1000px; margin: 0 auto;">
             <div class="hero-badge">Apresentação Especial</div>
             <h1>Descobre o Segredo Para Uma Rotina Com Mais Energia e Disposição</h1>
-            <p>Assiste ao vídeo abaixo com atenção para entenderes o passo a passo de como aplicar este método natural na tua vida diária.</p>
+            <p>Assiste ao vídeo abaixo com atenção para entenderes o passo a passo de como aplicar este método natural
+                na tua vida diária.</p>
 
             <!-- VSL Video -->
             <div class="video-wrapper">
@@ -366,7 +368,8 @@
             <div class="feature">
                 <span class="feature-icon">🔋</span>
                 <h3>Mais Energia</h3>
-                <p>Aprende hábitos simples que ajudam a combater a fadiga e trazem mais disposição para o teu dia a dia.</p>
+                <p>Aprende hábitos simples que ajudam a combater a fadiga e trazem mais disposição para o teu dia a dia.
+                </p>
             </div>
             <div class="feature">
                 <span class="feature-icon">🌿</span>
@@ -376,7 +379,8 @@
             <div class="feature">
                 <span class="feature-icon">🛡️</span>
                 <h3>Mais Qualidade de Vida</h3>
-                <p>Uma rotina prática e testada para fortalecer o teu corpo e trazer mais equilíbrio sem depender de produtos químicos.</p>
+                <p>Uma rotina prática e testada para fortalecer o teu corpo e trazer mais equilíbrio sem depender de
+                    produtos químicos.</p>
             </div>
         </div>
     </section>
@@ -388,8 +392,8 @@
             <p>Tem acesso completo ao material digital em PDF imediatamente após a confirmação.</p>
 
             <div class="price-tag">
-                <span class="old-price">29.99€</span>
-                9,90€
+                <span class="old-price">95€</span>
+                40,00€
             </div>
 
             <ul class="benefits-list">
@@ -402,14 +406,18 @@
             <button class="btn go-to-checkout">ACEDER AO GUIA COMPLETO</button>
 
             <div class="guarantee">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
                 <span>Pagamento 100% Seguro e Encriptado</span>
             </div>
         </div>
     </section>
 
-   <!-- FOOTER -->
-   <footer>
+    <!-- FOOTER -->
+    <footer>
         <div class="footer-content">
             <div>
                 <h4>Informações da Empresa</h4>
@@ -421,23 +429,27 @@
                     <strong>Telefone:</strong> [+351 900 000 000]
                 </p>
             </div>
-            
+
             <div>
                 <h4>Aviso Legal e Saúde</h4>
                 <p>
-                    Este produto não é um medicamento e não substitui o aconselhamento, diagnóstico ou tratamento médico profissional. 
+                    Este produto não é um medicamento e não substitui o aconselhamento, diagnóstico ou tratamento médico
+                    profissional.
                     As informações contidas neste site têm caráter estritamente educativo e informativo.
                 </p>
                 <p>
-                    Consulta sempre o teu médico ou profissional de saúde qualificado antes de realizares qualquer alteração na tua dieta ou rotina de saúde. Os resultados podem variar de pessoa para pessoa.
+                    Consulta sempre o teu médico ou profissional de saúde qualificado antes de realizares qualquer
+                    alteração na tua dieta ou rotina de saúde. Os resultados podem variar de pessoa para pessoa.
                 </p>
             </div>
 
             <div>
                 <h4>Privacidade e Dados</h4>
                 <p>
-                    Em conformidade com o RGPD (Regulamento Geral sobre a Proteção de Dados), tratamos os teus dados pessoais com total transparência. 
-                    Ao utilizar este site, concordas com a nossa recolha de dados conforme descrito na nossa Política de Privacidade.
+                    Em conformidade com o RGPD (Regulamento Geral sobre a Proteção de Dados), tratamos os teus dados
+                    pessoais com total transparência.
+                    Ao utilizar este site, concordas com a nossa recolha de dados conforme descrito na nossa Política de
+                    Privacidade.
                 </p>
                 <p>
                     Este site não é afiliado ao Taboola, Facebook, Google ou qualquer das suas entidades.
@@ -450,13 +462,13 @@
             <a href="/termos">Termos e Condições</a>
             <a href="/cookies">Política de Cookies</a>
         </div>
-        
+
         <p class="copyright">&copy; 2026 Protocolo Natural. Todos os direitos reservados.</p>
     </footer>
 
     <script>
         // Setup checkout URL
-        const BASE_URL = "https://pay.mundpay.com/0199fdf7-9701-719e-9e32-3e4c59bbe74d";
+        const BASE_URL = "https://hotmart.com/pt-br/marketplace/produtos/t-b/W102428295S";
         const MUNDPAY_URL = BASE_URL + window.location.search;
 
         // Add event listeners to all checkout buttons
